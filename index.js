@@ -31,6 +31,15 @@ MarionetteFileManager.prototype = {
   },
 
   /**
+   * Check if file(s) exists in device storage.
+   *
+   * @param {String|Array} files the path of files.
+   */
+  exists: function(files) {
+    return this.fileManager.exists(files);
+  },
+
+  /**
    * Remove files.
    *
    * @param {String|Array} files the path of files.
